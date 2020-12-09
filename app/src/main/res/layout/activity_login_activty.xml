@@ -115,6 +115,7 @@
                 android:layout_marginRight="30dp"
                 app:boxBackgroundColor="#4F4F4F"
                 app:startIconDrawable="@drawable/pwd_icon"
+                app:endIconMode="password_toggle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/edtText_email">
@@ -123,7 +124,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="xxxxxxxxx"
-                    android:textColorHint="#4F4F4F"/>
+                    android:textColorHint="#4F4F4F"
+                    android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
