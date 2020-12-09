@@ -133,7 +133,7 @@
                 android:layout_marginEnd="30dp"
                 android:gravity="center"
                 android:text="Login"
-                app:cornerRadius="20dp"
+                app:cornerRadius="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/edtText_pswd" />
@@ -145,7 +145,7 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="100dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/undraw_jogging_t14q"
+                android:src="@drawable/undraw_order_confirmed_1m3v"
                 app:layout_constraintTop_toBottomOf="@id/btn_login"
                 tools:ignore="MissingConstraints" />
 
@@ -164,7 +164,7 @@
                 android:layout_width="135dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="100dp"
-                android:src="@drawable/undraw_order_confirmed_1m3v"
+                android:src="@drawable/undraw_jogging_t14q"
                 app:layout_constraintStart_toEndOf="@id/img_2"
                 app:layout_constraintTop_toBottomOf="@id/btn_login"
                 app:layout_constraintEnd_toEndOf="parent"
