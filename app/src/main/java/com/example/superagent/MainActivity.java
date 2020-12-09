@@ -7,9 +7,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.superagent.databinding.ActivityMainBinding;
+import com.example.superagent.loginSignUp.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
-    ActivityMainBinding binding;
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         binding.hello.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LoginActivty.class);
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
