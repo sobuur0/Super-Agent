@@ -83,12 +83,14 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edtText_email"
-                style="@style/Edit_txt_styles"
+                style="@style/Widget.Design.TextInputLayout"
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginRight="30dp"
+                app:boxBackgroundColor="#4F4F4F"
+                app:startIconDrawable="@drawable/email_icon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/super_agent_txt">
@@ -96,22 +98,24 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/email_icon"
-                    android:drawablePadding="20dp"
                     android:gravity="start"
                     android:hint="Email"
+                    android:textColorHint="#4F4F4F"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edtText_pswd"
-                style="@style/Edit_txt_styles"
+                style="@style/Widget.Design.TextInputLayout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
+                app:boxBackgroundColor="#4F4F4F"
+                app:startIconDrawable="@drawable/pwd_icon"
+                app:endIconMode="password_toggle"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/edtText_email">
@@ -119,9 +123,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/set_password_icon"
-                    android:drawablePadding="20dp"
-                    android:hint="xxxxxxxxx" />
+                    android:hint="xxxxxxxxx"
+                    android:textColorHint="#4F4F4F"
+                    android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
@@ -133,7 +137,7 @@
                 android:layout_marginEnd="30dp"
                 android:gravity="center"
                 android:text="Login"
-                app:cornerRadius="20dp"
+                app:cornerRadius="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/edtText_pswd" />
@@ -145,7 +149,7 @@
                 android:layout_height="150dp"
                 android:layout_marginTop="100dp"
                 android:layout_marginBottom="10dp"
-                android:src="@drawable/undraw_jogging_t14q"
+                android:src="@drawable/undraw_order_confirmed_1m3v"
                 app:layout_constraintTop_toBottomOf="@id/btn_login"
                 tools:ignore="MissingConstraints" />
 
@@ -164,7 +168,7 @@
                 android:layout_width="135dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="100dp"
-                android:src="@drawable/undraw_order_confirmed_1m3v"
+                android:src="@drawable/undraw_jogging_t14q"
                 app:layout_constraintStart_toEndOf="@id/img_2"
                 app:layout_constraintTop_toBottomOf="@id/btn_login"
                 app:layout_constraintEnd_toEndOf="parent"
