@@ -3,4 +3,5 @@
     <string name="super_agent_txt">Super Agent</string>
     <string name="atlas_txt">Atlas</string>
     <string name="app_logo">app_logo</string>
+    <string name="txt_security_pin">Set your Security Pin</string>
 </resources>

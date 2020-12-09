@@ -29,7 +29,51 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
+            <ImageView
+                android:id="@+id/img_unlock"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="85dp"
+                android:src="@drawable/unlock"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_security_pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_security_pin"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="106dp"
+                android:layout_marginRight="106dp"
+                app:layout_constraintTop_toBottomOf="@id/img_unlock"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#4F4F4F"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="308dp"
+                android:layout_height="70dp"
+                app:layout_constraintTop_toBottomOf="@id/txt_security_pin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:text="To properly secure your funds, please set up a personal 4-digit security PIN. You'll need it for every transaction you'll make"
+                android:gravity="center" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
