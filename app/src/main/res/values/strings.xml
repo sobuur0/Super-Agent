@@ -3,4 +3,6 @@
     <string name="super_agent_txt">Super Agent</string>
     <string name="atlas_txt">Atlas</string>
     <string name="app_logo">app_logo</string>
+    <string name="txt_security_pin">Set your Security Pin</string>
+    <string name="security_directions">To properly secure your funds, please set up a personal 4-digit security PIN. You\'ll need it for every transaction you\'ll make</string>
 </resources>
