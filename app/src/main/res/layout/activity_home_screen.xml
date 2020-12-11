@@ -124,7 +124,8 @@
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/card_bckg" />
+                    android:src="@drawable/card_bckg"
+                    android:scaleType="centerCrop" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
