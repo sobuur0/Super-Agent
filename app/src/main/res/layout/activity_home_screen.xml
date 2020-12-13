@@ -43,7 +43,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="60dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp">
 
@@ -120,7 +120,7 @@
                 android:id="@+id/card_deposits"
                 android:layout_width="154dp"
                 android:layout_height="114dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 app:cardCornerRadius="4dp"
                 app:layout_constraintStart_toStartOf="@+id/card_account_info"
                 app:layout_constraintTop_toBottomOf="@id/card_account_info">
@@ -131,11 +131,28 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/card_bckg" />
 
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
                     <androidx.appcompat.widget.AppCompatImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/deposits" />
+                        app:srcCompat="@drawable/deposits"
+                        android:layout_marginTop="20dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Deposits"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"/>
+
+                </LinearLayout>
 
 
             </com.google.android.material.card.MaterialCardView>
@@ -147,7 +164,7 @@
                 android:layout_width="154dp"
                 android:layout_height="114dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 app:cardCornerRadius="4dp"
                 app:layout_constraintEnd_toEndOf="@+id/card_account_info"
                 app:layout_constraintStart_toEndOf="@id/card_deposits"
@@ -160,11 +177,27 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/card_bckg" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/withdrawal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/withdrawal"
+                        android:layout_marginTop="20dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Withdrawal"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="4dp"/>
+
+                </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -173,7 +206,7 @@
                 android:id="@+id/transchistory"
                 android:layout_width="154dp"
                 android:layout_height="114dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 app:layout_constraintStart_toStartOf="@+id/card_deposits"
                 app:layout_constraintTop_toBottomOf="@id/card_deposits"
                 app:cardCornerRadius="4dp">
@@ -184,11 +217,27 @@
                     android:src="@drawable/card_bckg"
                     android:scaleType="centerCrop"/>
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/transchistory"
-                    android:layout_gravity="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/transchistory"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transaction History"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -199,7 +248,7 @@
                 android:layout_width="154dp"
                 android:layout_height="114dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 app:cardCornerRadius="4dp"
                 app:layout_constraintEnd_toEndOf="@+id/card_withdrawal"
                 app:layout_constraintStart_toEndOf="@id/transchistory"
@@ -211,11 +260,27 @@
                     android:scaleType="centerCrop"
                     android:src="@drawable/card_bckg" />
 
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/support" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/support"
+                        android:layout_marginTop="20dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Support"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="4dp"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
@@ -227,7 +292,9 @@
                 app:layout_constraintTop_toBottomOf="@id/card_support"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
                 app:cornerRadius="4dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
