@@ -50,6 +50,66 @@
                     android:src="@drawable/card_bckg"
                     android:scaleType="centerCrop"/>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jane Doe"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="13sp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Credit"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/white"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="195dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="70dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="234561020940832"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="0dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="209.72"
+                        android:textSize="30dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="140dp"
+                        android:textColor="@android:color/white"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GHC"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="5dp"/>
+
+                </LinearLayout>
+
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.textview.MaterialTextView
@@ -122,7 +182,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="40dp"
-                app:cornerRadius="4dp" />
+                app:cornerRadius="4dp"
+                android:backgroundTint="@color/colorDeposit"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
