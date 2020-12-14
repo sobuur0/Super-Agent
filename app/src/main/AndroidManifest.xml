@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".home.homeScreen"></activity>
+        <activity android:name=".deposits.Deposit"></activity>
+        <activity android:name=".home.homeScreen" />
         <activity android:name=".loginSignUp.SetPin" />
         <activity android:name=".loginSignUp.LoginActivity" />
         <activity android:name=".MainActivity">
