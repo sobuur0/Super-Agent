@@ -58,7 +58,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Jane Doe"
+                        android:text="@string/jane_doe"
                         android:textColor="@android:color/white"
                         android:layout_marginTop="50dp"
                         android:layout_marginLeft="30dp"
@@ -67,7 +67,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Credit"
+                        android:text="@string/credit"
                         android:textSize="13sp"
                         android:textColor="@android:color/white"
                         android:layout_marginTop="50dp"
@@ -102,7 +102,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="GHC"
+                        android:text="@string/ghc"
                         android:textColor="@android:color/white"
                         android:textSize="13sp"
                         android:layout_marginTop="0dp"
@@ -119,7 +119,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="16dp"
-                android:text="Deposit"
+                android:text="@string/deposit"
                 android:textSize="24sp"
                 android:textAllCaps="false"
                 app:layout_constraintStart_toStartOf="parent"
@@ -143,7 +143,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Phone no."
+                    android:hint="@string/phone_no"
                     android:textColorHint="#4F4F4F"
                     android:inputType="number"/>
 
@@ -175,7 +175,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="301dp"
                 android:layout_height="60dp"
-                android:text="Deposit"
+                android:text="@string/deposit"
                 android:textColor="@android:color/white"
                 android:textAllCaps="false"
                 app:layout_constraintTop_toBottomOf="@id/edtText_amount"
