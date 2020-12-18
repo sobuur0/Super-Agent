@@ -6,4 +6,13 @@
     <string name="txt_security_pin">Set your Security Pin</string>
     <string name="security_directions">To properly secure your funds, please set up a personal 4-digit security PIN. You\'ll need it for every transaction you\'ll make</string>
     <string name="_209_72">209.72</string>
+    <string name="jane_doe">Jane Doe</string>
+    <string name="_01010101010101010">01010101010101010</string>
+    <string name="credit">Credit</string>
+    <string name="ng">NG</string>
+    <string name="deposits">Deposits</string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="transaction_history">Transaction History</string>
+    <string name="support">Support</string>
+    <string name="log_out">Log Out</string>
 </resources>

@@ -60,7 +60,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Jane Doe"
+                        android:text="@string/jane_doe"
                         android:textAllCaps="false"
                         android:textColor="@android:color/white"
                         android:textSize="13sp"
@@ -70,7 +70,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="01010101010101010"
+                        android:text="@string/_01010101010101010"
                         android:textColor="@android:color/white"
                         android:textSize="13sp"
                         android:layout_marginLeft="20dp"
@@ -79,7 +79,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Credit"
+                        android:text="@string/credit"
                         android:textColor="@android:color/white"
                         android:textSize="13sp"
                         android:layout_marginLeft="20dp"
@@ -103,7 +103,7 @@
                         <com.google.android.material.textview.MaterialTextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="NG"
+                            android:text="@string/ng"
                             android:textColor="@android:color/white"
                             android:textSize="13sp"
                             android:layout_marginLeft="20dp" />
@@ -147,7 +147,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Deposits"
+                        android:text="@string/deposits"
                         android:textColor="@android:color/white"
                         android:layout_gravity="center"
                         android:layout_marginTop="4dp"/>
@@ -192,7 +192,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Withdrawal"
+                        android:text="@string/withdrawal"
                         android:textColor="@android:color/white"
                         android:layout_gravity="center"
                         android:layout_marginTop="4dp"/>
@@ -232,7 +232,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Transaction History"
+                        android:text="@string/transaction_history"
                         android:textColor="@android:color/white"
                         android:layout_marginTop="4dp"
                         android:layout_gravity="center"/>
@@ -275,7 +275,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Support"
+                        android:text="@string/support"
                         android:textColor="@android:color/white"
                         android:layout_marginTop="4dp"
                         android:layout_gravity="center"/>
@@ -288,7 +288,7 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="301dp"
                 android:layout_height="60dp"
-                android:text="Log Out"
+                android:text="@string/log_out"
                 app:layout_constraintTop_toBottomOf="@id/card_support"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
