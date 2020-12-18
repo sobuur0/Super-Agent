@@ -84,7 +84,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="234561020940832"
+                        android:text="@string/_234561020940832"
                         android:textColor="@android:color/white"
                         android:textSize="13sp"
                         android:layout_marginLeft="30dp"
@@ -93,7 +93,7 @@
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="209.72"
+                        android:text="@string/_209_72"
                         android:textSize="30dp"
                         android:layout_marginTop="0dp"
                         android:layout_marginLeft="120dp"
@@ -166,7 +166,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="0.00"
+                    android:hint="@string/_0_00"
                     android:textColorHint="#4F4F4F"
                     android:inputType="numberDecimal"/>
 

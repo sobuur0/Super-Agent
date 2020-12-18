@@ -5,7 +5,6 @@
     <string name="app_logo">app_logo</string>
     <string name="txt_security_pin">Set your Security Pin</string>
     <string name="security_directions">To properly secure your funds, please set up a personal 4-digit security PIN. You\'ll need it for every transaction you\'ll make</string>
-    <string name="_209_72">209.72</string>
     <string name="_01010101010101010">01010101010101010</string>
     <string name="ng">NG</string>
     <string name="deposits">Deposits</string>
@@ -18,4 +17,7 @@
     <string name="ghc">GHC</string>
     <string name="phone_no">Phone no.</string>
     <string name="deposit">Deposit</string>
+    <string name="_0_00">0.00</string>
+    <string name="_209_72">209.72</string>
+    <string name="_234561020940832">234561020940832</string>
 </resources>
