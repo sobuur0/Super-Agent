@@ -99,7 +99,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:hint="Email"
+                    android:hint="@string/email"
                     android:textColorHint="#4F4F4F"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
@@ -123,7 +123,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="xxxxxxxxx"
+                    android:hint="@string/xxxxxxxxx"
                     android:textColorHint="#4F4F4F"
                     android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
@@ -136,7 +136,7 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginEnd="30dp"
                 android:gravity="center"
-                android:text="Login"
+                android:text="@string/login"
                 app:cornerRadius="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
