@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.superagent.databinding.ActivityWithdrawBinding;
 
-public class withdraw extends AppCompatActivity {
+public class Withdraw extends AppCompatActivity {
     private ActivityWithdrawBinding binding;
 
     @Override
