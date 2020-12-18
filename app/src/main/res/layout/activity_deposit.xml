@@ -50,7 +50,7 @@
                     android:src="@drawable/card_bckg"
                     android:scaleType="centerCrop"/>
 
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
@@ -70,15 +70,16 @@
                         android:text="@string/credit"
                         android:textSize="13sp"
                         android:textColor="@android:color/white"
+                        android:layout_gravity="right"
                         android:layout_marginTop="50dp"
-                        android:layout_marginLeft="175dp" />
+                        android:layout_marginRight="115dp"
+                        android:layout_marginLeft="0dp" />
 
-                </LinearLayout>
+                </FrameLayout>
 
-                <LinearLayout
+                <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
                     android:layout_marginTop="70dp">
 
                     <com.google.android.material.textview.MaterialTextView
@@ -87,16 +88,19 @@
                         android:text="@string/_234561020940832"
                         android:textColor="@android:color/white"
                         android:textSize="13sp"
+                        android:layout_gravity="left"
                         android:layout_marginLeft="30dp"
-                        android:layout_marginTop="0dp"/>
+                        android:layout_marginTop="15dp"/>
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/_209_72"
-                        android:textSize="30dp"
+                        android:textSize="30sp"
                         android:layout_marginTop="0dp"
                         android:layout_marginLeft="120dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="60dp"
                         android:textColor="@android:color/white"/>
 
                     <com.google.android.material.textview.MaterialTextView
@@ -105,11 +109,12 @@
                         android:text="@string/ghc"
                         android:textColor="@android:color/white"
                         android:textSize="13sp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginRight="5dp"/>
+                        android:layout_gravity="right"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="20dp"/>
 
-                </LinearLayout>
+                </FrameLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
