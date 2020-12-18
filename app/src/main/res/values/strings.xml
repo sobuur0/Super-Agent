@@ -23,4 +23,8 @@
     <string name="email">Email</string>
     <string name="xxxxxxxxx">xxxxxxxxx</string>
     <string name="login">Login</string>
+    <string name="xxxx">xxxx</string>
+    <string name="confirm_pin">Confirm Pin</string>
+    <string name="set_pin">Set Pin</string>
+    <string name="set_pin_image">Set Pin Image</string>
 </resources>
