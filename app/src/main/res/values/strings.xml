@@ -27,4 +27,6 @@
     <string name="confirm_pin">Confirm Pin</string>
     <string name="set_pin">Set Pin</string>
     <string name="set_pin_image">Set Pin Image</string>
+    <string name="_210_00">210.00</string>
+    <string name="withdraw">Withdraw</string>
 </resources>
