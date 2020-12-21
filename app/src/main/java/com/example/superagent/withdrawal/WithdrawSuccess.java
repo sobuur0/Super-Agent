@@ -4,16 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.superagent.databinding.ActivityWithdrawBinding;
+import com.example.superagent.databinding.ActivityWithdrawSuccessBinding;
 
-public class Withdraw extends AppCompatActivity {
-    private ActivityWithdrawBinding binding;
+public class WithdrawSuccess extends AppCompatActivity {
+
+    private ActivityWithdrawSuccessBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityWithdrawBinding.inflate(getLayoutInflater());
+        binding = ActivityWithdrawSuccessBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
     }
 }

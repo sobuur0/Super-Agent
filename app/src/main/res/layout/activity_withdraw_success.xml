@@ -26,7 +26,6 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -124,64 +123,37 @@
             </com.google.android.material.card.MaterialCardView>
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/txt_deposit"
+                android:id="@+id/success_screen_msg"
                 android:layout_width="wrap_content"
-                android:layout_height="36dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="16dp"
-                android:text="@string/withdrawal"
-                android:textColor="#4F4F4F"
-                android:textSize="24sp"
+                android:layout_height="wrap_content"
+                android:text="Enter your personal security PIN code."
                 android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="#4F4F4F"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/card_unknown"
-                android:gravity="center_horizontal" />
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"/>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edtText_phone_no"
+                android:id="@+id/txtSecurityPin"
                 style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="50dp"
-                android:layout_marginRight="30dp"
-                app:boxBackgroundColor="#4F4F4F"
-                app:startIconDrawable="@drawable/phone_no"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txt_deposit">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/phone_no"
-                    android:textColorHint="#4F4F4F"
-                    android:inputType="number"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/edtText_amount"
-                style="@style/Widget.Design.TextInputLayout"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="30dp"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:layout_marginRight="30dp"
                 app:boxBackgroundColor="#4F4F4F"
-                app:startIconDrawable="@drawable/amount"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:startIconDrawable="@drawable/pwd_icon"
+                app:endIconMode="password_toggle"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/edtText_phone_no">
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/success_screen_msg">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/_210_00"
-                    android:textColorHint="#4F4F4F"
-                    android:inputType="numberDecimal"/>
-
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/xxxx"
+                android:textColorHint="#4F4F4F"
+                android:inputType="textPassword"/>
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
@@ -191,12 +163,13 @@
                 android:hint="@string/withdraw"
                 android:textColor="@android:color/white"
                 android:textAllCaps="false"
-                app:layout_constraintTop_toBottomOf="@id/edtText_amount"
+                app:layout_constraintTop_toBottomOf="@id/txtSecurityPin"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="40dp"
                 app:cornerRadius="4dp"
-                android:backgroundTint="@color/colorPrimary"/>
+                android:backgroundTint="#4D5F8D"/>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
