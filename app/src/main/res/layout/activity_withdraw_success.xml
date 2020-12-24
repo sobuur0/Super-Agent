@@ -153,7 +153,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/xxxx"
                 android:textColorHint="#4F4F4F"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
@@ -169,6 +169,31 @@
                 android:layout_marginTop="40dp"
                 app:cornerRadius="4dp"
                 android:backgroundTint="#4D5F8D"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtTransactionDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction Details"
+                android:textSize="24sp"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/btn_withdraw"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#4F4F4F"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction Type"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/txtTransactionDetails"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="8dp"/>
+
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
