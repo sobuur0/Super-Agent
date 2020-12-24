@@ -160,7 +160,7 @@
                 android:id="@+id/btn_withdraw"
                 android:layout_width="301dp"
                 android:layout_height="60dp"
-                android:hint="@string/withdraw"
+                android:text="@string/withdraw"
                 android:textColor="@android:color/white"
                 android:textAllCaps="false"
                 app:layout_constraintTop_toBottomOf="@id/txtSecurityPin"
