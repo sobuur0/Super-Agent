@@ -184,16 +184,100 @@
                 android:textColor="#4F4F4F"/>
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_transactiontype"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Transaction Type"
                 android:textSize="12sp"
+                android:textColor="#4F4F4F"
                 app:layout_constraintTop_toBottomOf="@id/txtTransactionDetails"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="8dp"/>
 
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_withdrawal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdrawal"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_transactiontype"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#4F4F4F"/>
 
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="12sp"
+                android:textColor="#4F4F4F"
+                app:layout_constraintTop_toBottomOf="@id/txt_withdrawal"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_georgedoe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="George Doe"
+                android:textSize="18sp"
+                android:textColor="#4F4F4F"
+                app:layout_constraintTop_toBottomOf="@id/txt_name"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone no."
+                android:textColor="#4F4F4F"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_georgedoe"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_2339894338475"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+233 989 433 8475"
+                android:textColor="#4F4F4F"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_phone_no"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textColor="#4F4F4F"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_2339894338475"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_150.00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150.00"
+                android:textColor="#4F4F4F"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_amount"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
