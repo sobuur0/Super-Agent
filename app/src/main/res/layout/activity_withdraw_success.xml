@@ -268,7 +268,7 @@
                 android:layout_marginLeft="30dp"/>
 
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/txt_150.00"
+                android:id="@+id/txt_150_00"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="150.00"
@@ -285,11 +285,12 @@
                 android:text="Cancel Transaction"
                 android:textColor="@color/colorWhite"
                 android:textAllCaps="false"
-                app:layout_constraintTop_toBottomOf="@+id/txt_150.00"
+                app:layout_constraintTop_toBottomOf="@+id/txt_150_00"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
