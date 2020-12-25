@@ -126,7 +126,7 @@
                 android:id="@+id/success_screen_msg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Enter your personal security PIN code."
+                android:text="@string/enter_your_personal_security_pin_code"
                 android:textAllCaps="false"
                 android:textSize="14sp"
                 android:textColor="#4F4F4F"
@@ -174,7 +174,7 @@
                 android:id="@+id/txtTransactionDetails"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Transaction Details"
+                android:text="@string/transaction_details"
                 android:textSize="24sp"
                 android:textAllCaps="false"
                 app:layout_constraintTop_toBottomOf="@id/btn_withdraw"
@@ -187,7 +187,7 @@
                 android:id="@+id/txt_transactiontype"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Transaction Type"
+                android:text="@string/transaction_type"
                 android:textSize="12sp"
                 android:textColor="#4F4F4F"
                 app:layout_constraintTop_toBottomOf="@id/txtTransactionDetails"
@@ -205,13 +205,14 @@
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
-                android:textColor="#4F4F4F"/>
+                android:textColor="#4F4F4F"
+                />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txt_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name"
+                android:text="@string/name"
                 android:textSize="12sp"
                 android:textColor="#4F4F4F"
                 app:layout_constraintTop_toBottomOf="@id/txt_withdrawal"
@@ -223,7 +224,7 @@
                 android:id="@+id/txt_georgedoe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="George Doe"
+                android:text="@string/george_doe"
                 android:textSize="18sp"
                 android:textColor="#4F4F4F"
                 app:layout_constraintTop_toBottomOf="@id/txt_name"
@@ -235,7 +236,7 @@
                 android:id="@+id/txt_phone_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone no."
+                android:text="@string/phone_no"
                 android:textColor="#4F4F4F"
                 android:textSize="12sp"
                 app:layout_constraintTop_toBottomOf="@+id/txt_georgedoe"
@@ -247,7 +248,7 @@
                 android:id="@+id/txt_2339894338475"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+233 989 433 8475"
+                android:text="@string/_233_989_433_8475"
                 android:textColor="#4F4F4F"
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@+id/txt_phone_no"
@@ -259,7 +260,7 @@
                 android:id="@+id/txt_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Amount"
+                android:text="@string/amount"
                 android:textColor="#4F4F4F"
                 android:textSize="12sp"
                 app:layout_constraintTop_toBottomOf="@+id/txt_2339894338475"
@@ -282,15 +283,14 @@
             <com.google.android.material.button.MaterialButton
                 android:layout_width="301dp"
                 android:layout_height="60dp"
-                android:text="Cancel Transaction"
+                android:text="@string/cancel_transaction"
                 android:textColor="@color/colorWhite"
                 android:textAllCaps="false"
                 app:layout_constraintTop_toBottomOf="@+id/txt_150_00"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginTop="20dp"
-                />
+                android:layout_marginTop="20dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
