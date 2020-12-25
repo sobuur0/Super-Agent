@@ -279,6 +279,17 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="30dp"/>
 
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="301dp"
+                android:layout_height="60dp"
+                android:text="Cancel Transaction"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/txt_150.00"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="20dp"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
