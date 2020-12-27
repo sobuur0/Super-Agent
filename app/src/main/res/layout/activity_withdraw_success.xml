@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".deposits.Deposit">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:elevation="0dp">
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_unknown"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="0dp"
+                app:cardCornerRadius="0dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/card_bckg"
+                    android:scaleType="centerCrop"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/jane_doe"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:textSize="13sp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/credit"
+                        android:textSize="13sp"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginRight="95dp"
+                        android:layout_marginLeft="0dp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="70dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_234561020940832"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="15dp"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_209_72"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="120dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="40dp"
+                        android:textColor="@android:color/white"/>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ghc"
+                        android:textColor="@android:color/white"
+                        android:textSize="13sp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginRight="10dp"/>
+
+                </FrameLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/success_screen_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_your_personal_security_pin_code"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="#4F4F4F"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_unknown"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtSecurityPin"
+                style="@style/Widget.Design.TextInputLayout"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:boxBackgroundColor="#4F4F4F"
+                app:startIconDrawable="@drawable/pwd_icon"
+                app:endIconMode="password_toggle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/success_screen_msg">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/xxxx"
+                android:textColorHint="#4F4F4F"
+                android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_withdraw"
+                android:layout_width="301dp"
+                android:layout_height="60dp"
+                android:text="@string/withdraw"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/txtSecurityPin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="40dp"
+                app:cornerRadius="4dp"
+                android:backgroundTint="#4D5F8D"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtTransactionDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transaction_details"
+                android:textSize="24sp"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@id/btn_withdraw"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#4F4F4F"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_transactiontype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transaction_type"
+                android:textSize="12sp"
+                android:textColor="#4F4F4F"
+                app:layout_constraintTop_toBottomOf="@id/txtTransactionDetails"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="8dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_withdrawal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/withdrawal"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_transactiontype"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#4F4F4F"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="12sp"
+                android:textColor="#4F4F4F"
+                app:layout_constraintTop_toBottomOf="@id/txt_withdrawal"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_georgedoe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/george_doe"
+                android:textSize="18sp"
+                android:textColor="#4F4F4F"
+                app:layout_constraintTop_toBottomOf="@id/txt_name"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="5dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_phone_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_no"
+                android:textColor="#4F4F4F"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_georgedoe"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_2339894338475"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_233_989_433_8475"
+                android:textColor="#4F4F4F"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_phone_no"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amount"
+                android:textColor="#4F4F4F"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_2339894338475"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_150_00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_150_00"
+                android:textColor="#4F4F4F"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/txt_amount"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="301dp"
+                android:layout_height="60dp"
+                android:text="@string/cancel_transaction"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                app:layout_constraintTop_toBottomOf="@+id/txt_150_00"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="20dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".withdrawal.WithdrawSuccess"
+            android:parentActivityName=".withdrawal.Withdraw"/>
+        <activity
             android:name=".withdrawal.Withdraw"
-            android:parentActivityName=".home.homeScreen"/>
+            android:parentActivityName=".home.homeScreen" />
         <activity
             android:name=".deposits.Deposit"
             android:parentActivityName=".home.homeScreen" />
@@ -21,6 +24,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

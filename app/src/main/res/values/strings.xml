@@ -27,4 +27,15 @@
     <string name="confirm_pin">Confirm Pin</string>
     <string name="set_pin">Set Pin</string>
     <string name="set_pin_image">Set Pin Image</string>
+    <string name="_210_00">210.00</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="enter_your_personal_security_pin_code">Enter your personal security PIN code.</string>
+    <string name="transaction_details">Transaction Details</string>
+    <string name="transaction_type">Transaction Type</string>
+    <string name="name">Name</string>
+    <string name="george_doe">George Doe</string>
+    <string name="_233_989_433_8475">+233 989 433 8475</string>
+    <string name="amount">Amount</string>
+    <string name="cancel_transaction">Cancel Transaction</string>
+    <string name="_150_00">150.00</string>
 </resources>
