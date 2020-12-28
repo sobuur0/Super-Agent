@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".transactions.TransactionsHistory"></activity>
         <activity
             android:name=".withdrawal.WithdrawSuccess"
-            android:parentActivityName=".withdrawal.Withdraw"/>
+            android:parentActivityName=".withdrawal.Withdraw" />
         <activity
             android:name=".withdrawal.Withdraw"
             android:parentActivityName=".home.homeScreen" />
