@@ -12,5 +12,6 @@ public class TransactionsHistory extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityTransactionsHistoryBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
     }
 }

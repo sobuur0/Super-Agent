@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.example.superagent.databinding.ActivityHomeScreenBinding;
 import com.example.superagent.deposits.Deposit;
+import com.example.superagent.transactions.TransactionsHistory;
 import com.example.superagent.withdrawal.Withdraw;
 
 import java.util.HashMap;
@@ -38,6 +39,14 @@ public class homeScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(homeScreen.this, Withdraw.class);
+                startActivity(intent);
+            }
+        });
+
+        binding.transchistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homeScreen.this, TransactionsHistory.class);
                 startActivity(intent);
             }
         });
