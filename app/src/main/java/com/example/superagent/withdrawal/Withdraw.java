@@ -8,9 +8,6 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 
 import com.example.superagent.R;
@@ -40,7 +37,7 @@ public class Withdraw extends AppCompatActivity {
         binding.btnWithdraw.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Withdraw.this, WithdrawSuccess.class);
+                Intent intent = new Intent(Withdraw.this, WithdrawalTransaction.class);
                 startActivity(intent);
             }
         });

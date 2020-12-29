@@ -13,7 +13,7 @@ import com.example.superagent.databinding.ActivityWithdrawSuccessBinding;
 
 import java.util.Objects;
 
-public class WithdrawSuccess extends AppCompatActivity {
+public class WithdrawalTransaction extends AppCompatActivity {
 
     private ActivityWithdrawSuccessBinding binding;
 
