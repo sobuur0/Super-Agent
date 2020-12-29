@@ -9,19 +9,19 @@ import android.os.Build;
 import android.os.Bundle;
 
 import com.example.superagent.R;
-import com.example.superagent.databinding.ActivityWithdrawSuccessBinding;
+import com.example.superagent.databinding.ActivityWithdrawalTransactionBinding;
 
 import java.util.Objects;
 
 public class WithdrawalTransaction extends AppCompatActivity {
 
-    private ActivityWithdrawSuccessBinding binding;
+    private ActivityWithdrawalTransactionBinding binding;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityWithdrawSuccessBinding.inflate(getLayoutInflater());
+        binding = ActivityWithdrawalTransactionBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         Drawable backArrow = ContextCompat.getDrawable(this, R.drawable.arrowback);
