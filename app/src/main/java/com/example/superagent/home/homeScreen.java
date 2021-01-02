@@ -50,6 +50,13 @@ public class homeScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        binding.cardSupport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
     }
 
 //    private void saveCardDetails() {

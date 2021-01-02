@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".transactions.TransactionsHistory"></activity>
         <activity
-            android:name=".withdrawal.WithdrawSuccess"
+            android:name=".withdrawal.WithdrawalTransaction"
             android:parentActivityName=".withdrawal.Withdraw" />
         <activity
             android:name=".withdrawal.Withdraw"
