@@ -171,6 +171,7 @@
                 android:textSize="12sp"/>
 
             <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/comp1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -181,6 +182,15 @@
                 android:textSize="16sp"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/colorPrimary"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="@+id/comp1"
+                app:layout_constraintStart_toStartOf="@+id/date1"
+                app:layout_constraintTop_toBottomOf="@id/date1" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
