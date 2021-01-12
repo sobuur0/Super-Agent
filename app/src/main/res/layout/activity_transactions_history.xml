@@ -461,6 +461,72 @@
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"/>
 
+
+<!--            Transaction6-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/withdraw6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/line5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:text="Withdraw  -  05712342323"
+                android:layout_marginLeft="30dp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/amnt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/line5"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="5000.00"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:layout_marginRight="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/date6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/withdraw6"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="11:32, 10/10/2017"
+                android:textSize="12sp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/comp6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"
+                app:layout_constraintTop_toBottomOf="@id/amnt6"
+                android:text="Completed"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/line6"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/comp6"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
