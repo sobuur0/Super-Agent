@@ -47,7 +47,7 @@
                 android:id="@+id/txt_welcome_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Welcome,  Jane Doe"
+                android:text="Welcome, Jane Doe"
                 android:textSize="30sp"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
