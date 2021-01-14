@@ -5,4 +5,6 @@
     <color name="colorAccent">#4F4F4F</color>
     <color name="colorDeposit">#4D5F8D</color>
     <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPending">#B8BB22</color>
+    <color name="colorDeposit2">#1DBB0B</color>
 </resources>

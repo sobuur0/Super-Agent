@@ -126,22 +126,486 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Transaction History"
-                android:textSize="30sp"
+                android:textSize="24sp"
+                android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@id/card_unknown"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"/>
 
+
+<!--            Transaction1-->
             <com.google.android.material.textview.MaterialTextView
-                android:layout_width="match_parent"
+                android:id="@+id/withdraw1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/txt_transhistory"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="20dp"
-                android:text="Name is Hohn doe"
-                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:textSize="16sp"
+                android:text="Withdrawal  -  05712342323"
+                android:layout_marginLeft="30dp"
                 />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/amnt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintTop_toBottomOf="@id/txt_transhistory"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="5000.00"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:layout_marginRight="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/withdraw1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="11:32, 10/10/2017"
+                android:textSize="12sp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/comp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"
+                app:layout_constraintTop_toBottomOf="@id/amnt1"
+                android:text="Completed"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/comp1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+
+<!--            Transaction2-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/withdraw2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/line1"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:textSize="16sp"
+                android:text="Withdrawal  -  05712342323"
+                android:layout_marginLeft="30dp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/amnt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintTop_toBottomOf="@id/line1"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="5000.00"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:layout_marginRight="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/date2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/withdraw2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="11:32, 10/10/2017"
+                android:textSize="12sp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/comp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"
+                app:layout_constraintTop_toBottomOf="@id/amnt2"
+                android:text="Pending"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPending"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/comp2"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+
+<!--            Transaction3-->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/withdraw3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/line2"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:textSize="16sp"
+                android:text="Deposit  -  05712342323"
+                android:layout_marginLeft="30dp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/amnt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintTop_toBottomOf="@id/line2"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="5000.00"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:layout_marginRight="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/date3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/withdraw3"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="11:32, 10/10/2017"
+                android:textSize="12sp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/comp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"
+                app:layout_constraintTop_toBottomOf="@id/amnt3"
+                android:text="Completed"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorDeposit2"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/line3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/comp3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+
+<!--            Transaction4-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/withdraw4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/line3"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:text="Withdrawal  -  05712342323"
+                android:layout_marginLeft="30dp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/amnt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/line3"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="5000.00"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:layout_marginRight="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/date4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/withdraw4"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="11:32, 10/10/2017"
+                android:textSize="12sp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/comp4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"
+                app:layout_constraintTop_toBottomOf="@id/amnt4"
+                android:text="Completed"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/line4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/comp4"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+
+<!--            Transaction5-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/withdraw5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/line4"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:text="Withdrawal  -  05712342323"
+                android:layout_marginLeft="30dp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/amnt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/line4"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="5000.00"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:layout_marginRight="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/date5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/withdraw5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="11:32, 10/10/2017"
+                android:textSize="12sp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/comp5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"
+                app:layout_constraintTop_toBottomOf="@id/amnt5"
+                android:text="Pending"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPending"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/line5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/comp5"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+
+<!--            Transaction6-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/withdraw6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/line5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:text="Deposit  -  05712342323"
+                android:layout_marginLeft="30dp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/amnt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/line5"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="5000.00"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:layout_marginRight="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/date6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/withdraw6"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="11:32, 10/10/2017"
+                android:textSize="12sp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/comp6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"
+                app:layout_constraintTop_toBottomOf="@id/amnt6"
+                android:text="Completed"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorDeposit2"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/line6"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/comp6"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+<!--            Transaction7-->
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/withdraw7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/line6"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:text="Withdrawal  -  05712342323"
+                android:layout_marginLeft="30dp"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/amnt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/line6"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="5000.00"
+                android:textSize="16sp"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                android:layout_marginRight="30dp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/date7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/withdraw7"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:text="11:32, 10/10/2017"
+                android:textSize="12sp"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/comp7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="30dp"
+                app:layout_constraintTop_toBottomOf="@id/amnt7"
+                android:text="Completed"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/holo_red_dark"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/line7"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/comp7"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"/>
+
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fab1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="562dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="30dp"/>
+
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

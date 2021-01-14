@@ -281,6 +281,7 @@
                 android:layout_marginLeft="30dp"/>
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancelTransaction"
                 android:layout_width="301dp"
                 android:layout_height="60dp"
                 android:text="@string/cancel_transaction"
