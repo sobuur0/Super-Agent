@@ -4,9 +4,11 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 
 import com.example.superagent.R;
 import com.example.superagent.databinding.ActivityDepositBinding;
@@ -32,5 +34,13 @@ public class Deposit extends AppCompatActivity {
         getSupportActionBar().setHomeAsUpIndicator(backArrow);
         getSupportActionBar().setTitle("");
         binding.appBarLayout.bringToFront();
+
+        binding.btnDeposit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Deposit.this, DepositTransaction.class);
+                startActivity(intent);
+            }
+        });
     }
 }
