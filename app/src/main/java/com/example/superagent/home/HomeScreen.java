@@ -1,24 +1,17 @@
 package com.example.superagent.home;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.superagent.databinding.ActivityHomeScreenBinding;
 import com.example.superagent.deposits.Deposit;
 import com.example.superagent.transactions.TransactionsHistory;
 import com.example.superagent.withdrawal.Withdraw;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
-
-public class homeScreen extends AppCompatActivity {
+public class HomeScreen extends AppCompatActivity {
     private ActivityHomeScreenBinding binding;
 
     @Override
@@ -30,7 +23,7 @@ public class homeScreen extends AppCompatActivity {
         binding.cardDeposits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(homeScreen.this, Deposit.class);
+                Intent intent = new Intent(HomeScreen.this, Deposit.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +31,7 @@ public class homeScreen extends AppCompatActivity {
         binding.cardWithdrawal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(homeScreen.this, Withdraw.class);
+                Intent intent = new Intent(HomeScreen.this, Withdraw.class);
                 startActivity(intent);
             }
         });
@@ -46,7 +39,7 @@ public class homeScreen extends AppCompatActivity {
         binding.transchistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(homeScreen.this, TransactionsHistory.class);
+                Intent intent = new Intent(HomeScreen.this, TransactionsHistory.class);
                 startActivity(intent);
             }
         });

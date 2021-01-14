@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".withdrawal.WithdrawalTransaction">
+    tools:context=".deposits.DepositTransaction">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -148,19 +148,19 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/success_screen_msg">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/xxxx"
-                android:textColorHint="#4F4F4F"
-                android:inputType="textPassword" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/xxxx"
+                    android:textColorHint="#4F4F4F"
+                    android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_deposit"
                 android:layout_width="301dp"
                 android:layout_height="60dp"
-                android:text="@string/withdraw"
+                android:text="@string/deposit"
                 android:textColor="@android:color/white"
                 android:textAllCaps="false"
                 app:layout_constraintTop_toBottomOf="@id/txtSecurityPin"
@@ -199,7 +199,7 @@
                 android:id="@+id/txt_withdrawal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/withdrawal"
+                android:text="@string/deposit"
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@+id/txt_transactiontype"
                 app:layout_constraintStart_toStartOf="parent"

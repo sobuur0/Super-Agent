@@ -11,19 +11,19 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.superagent.R;
-import com.example.superagent.databinding.ActivityDepositBinding;
+import com.example.superagent.databinding.ActivityDepositSuccessBinding;
+import com.example.superagent.home.HomeScreen;
 
 import java.util.Objects;
 
-public class Deposit extends AppCompatActivity {
-
-    private ActivityDepositBinding binding;
+public class DepositSuccess extends AppCompatActivity {
+    private ActivityDepositSuccessBinding binding;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityDepositBinding.inflate(getLayoutInflater());
+        binding = ActivityDepositSuccessBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         Drawable backArrow = ContextCompat.getDrawable(this, R.drawable.arrowback);
@@ -35,10 +35,10 @@ public class Deposit extends AppCompatActivity {
         getSupportActionBar().setTitle("");
         binding.appBarLayout.bringToFront();
 
-        binding.btnDeposit.setOnClickListener(new View.OnClickListener() {
+        binding.btnBackHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Deposit.this, DepositTransaction.class);
+                Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
                 startActivity(intent);
             }
         });

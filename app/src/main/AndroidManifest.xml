@@ -9,18 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".transactions.TransactionsHistory"
-            android:parentActivityName=".home.homeScreen"/>
+        <activity android:name=".deposits.DepositSuccess"
+            android:parentActivityName=".deposits.DepositTransaction"/>
+        <activity android:name=".deposits.DepositTransaction"
+            android:parentActivityName=".deposits.Deposit"/>
+        <activity
+            android:name=".transactions.TransactionsHistory"
+            android:parentActivityName=".home.HomeScreen" />
         <activity
             android:name=".withdrawal.WithdrawalTransaction"
             android:parentActivityName=".withdrawal.Withdraw" />
         <activity
             android:name=".withdrawal.Withdraw"
-            android:parentActivityName=".home.homeScreen" />
+            android:parentActivityName=".home.HomeScreen" />
         <activity
             android:name=".deposits.Deposit"
-            android:parentActivityName=".home.homeScreen" />
-        <activity android:name=".home.homeScreen" />
+            android:parentActivityName=".home.HomeScreen" />
+        <activity android:name=".home.HomeScreen" />
         <activity android:name=".loginSignUp.SetPin" />
         <activity android:name=".loginSignUp.LoginActivity" />
         <activity android:name=".MainActivity">
