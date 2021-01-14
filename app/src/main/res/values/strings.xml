@@ -39,4 +39,7 @@
     <string name="cancel_transaction">Cancel Transaction</string>
     <string name="_150_00">150.00</string>
     <string name="continue_to_confirmation_code">Continue to Confirmation Code</string>
+    <string name="back_to_home">Back to Home</string>
+    <string name="transaction_went_smoothly_you_have_your_cash_nand_someone_else_has_their_credit_yippie">Transaction went smoothly. You have your cash\nand someone else has their credit. Yippie!!</string>
+    <string name="withdawal_nsuccessful">Withdawal\nSuccessful</string>
 </resources>

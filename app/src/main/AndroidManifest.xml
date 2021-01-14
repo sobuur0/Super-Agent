@@ -9,8 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".withdrawal.WithdrawalConfirmation"
-            android:parentActivityName=".withdrawal.WithdrawalTransaction"/>
+        <activity android:name=".withdrawal.WithdrawalSuccessful"
+            android:parentActivityName=".withdrawal.WithdrawalConfirmation"/>
+        <activity
+            android:name=".withdrawal.WithdrawalConfirmation"
+            android:parentActivityName=".withdrawal.WithdrawalTransaction" />
         <activity
             android:name=".deposits.DepositSuccess"
             android:parentActivityName=".deposits.DepositTransaction" />
