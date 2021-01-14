@@ -160,7 +160,7 @@
                 android:id="@+id/btn_withdraw"
                 android:layout_width="301dp"
                 android:layout_height="60dp"
-                android:text="@string/withdraw"
+                android:text="Continue to Confirmation Code"
                 android:textColor="@android:color/white"
                 android:textAllCaps="false"
                 app:layout_constraintTop_toBottomOf="@id/txtSecurityPin"
