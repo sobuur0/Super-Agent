@@ -63,7 +63,8 @@
                         android:textStyle="bold"
                         android:layout_marginTop="50dp"
                         android:layout_marginLeft="30dp"
-                        android:textSize="13sp"/>
+                        android:textSize="13sp"
+                        android:layout_marginStart="30dp" />
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -75,7 +76,9 @@
                         android:layout_gravity="right"
                         android:layout_marginTop="50dp"
                         android:layout_marginRight="95dp"
-                        android:layout_marginLeft="0dp" />
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginEnd="95dp"
+                        android:layout_marginStart="0dp" />
 
                 </FrameLayout>
 
@@ -93,7 +96,8 @@
                         android:textStyle="bold"
                         android:layout_gravity="left"
                         android:layout_marginLeft="30dp"
-                        android:layout_marginTop="15dp"/>
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="30dp" />
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -105,7 +109,9 @@
                         android:layout_marginLeft="120dp"
                         android:layout_gravity="right"
                         android:layout_marginRight="40dp"
-                        android:textColor="@android:color/white"/>
+                        android:textColor="@android:color/white"
+                        android:layout_marginStart="120dp"
+                        android:layout_marginEnd="40dp" />
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -116,7 +122,9 @@
                         android:layout_gravity="right"
                         android:layout_marginTop="20dp"
                         android:layout_marginLeft="70dp"
-                        android:layout_marginRight="10dp"/>
+                        android:layout_marginRight="10dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginEnd="10dp" />
 
                 </FrameLayout>
 
@@ -133,7 +141,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/card_unknown"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/txtSecurityPin"
@@ -160,7 +169,7 @@
                 android:id="@+id/btn_withdraw"
                 android:layout_width="301dp"
                 android:layout_height="60dp"
-                android:text="Continue to Confirmation Code"
+                android:text="@string/continue_to_confirmation_code"
                 android:textColor="@android:color/white"
                 android:textAllCaps="false"
                 app:layout_constraintTop_toBottomOf="@id/txtSecurityPin"
@@ -181,7 +190,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
-                android:textColor="#4F4F4F"/>
+                android:textColor="#4F4F4F"
+                android:layout_marginStart="30dp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txt_transactiontype"
@@ -193,7 +203,8 @@
                 app:layout_constraintTop_toBottomOf="@id/txtTransactionDetails"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="8dp"/>
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="30dp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txt_withdrawal"
@@ -206,7 +217,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="5dp"
                 android:textColor="#4F4F4F"
-                />
+                android:layout_marginStart="30dp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txt_name"
@@ -218,7 +229,8 @@
                 app:layout_constraintTop_toBottomOf="@id/txt_withdrawal"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="16dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txt_georgedoe"
@@ -230,7 +242,8 @@
                 app:layout_constraintTop_toBottomOf="@id/txt_name"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txt_phone_no"
@@ -242,7 +255,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/txt_georgedoe"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="16dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txt_2339894338475"
@@ -254,7 +268,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/txt_phone_no"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txt_amount"
@@ -266,7 +281,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/txt_2339894338475"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="16dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txt_150_00"
@@ -278,7 +294,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/txt_amount"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnCancelTransaction"
