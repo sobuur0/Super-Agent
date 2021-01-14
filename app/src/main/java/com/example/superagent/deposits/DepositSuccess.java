@@ -4,15 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.superagent.databinding.ActivityDepositTransactionBinding;
+import com.example.superagent.databinding.ActivityDepositSuccessBinding;
 
-public class DepositTransaction extends AppCompatActivity {
-    private ActivityDepositTransactionBinding binding;
+public class DepositSuccess extends AppCompatActivity {
+    private ActivityDepositSuccessBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityDepositTransactionBinding.inflate(getLayoutInflater());
+        binding = ActivityDepositSuccessBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
     }
 }
