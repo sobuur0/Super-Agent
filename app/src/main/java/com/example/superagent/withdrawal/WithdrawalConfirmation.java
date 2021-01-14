@@ -23,7 +23,7 @@ public class WithdrawalConfirmation extends AppCompatActivity {
         binding = ActivityWithdrawalConfirmationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Drawable backArrow = ContextCompat.getDrawable(this, R.drawable.arrowback);
+        Drawable backArrow = ContextCompat.getDrawable(this, R.drawable.arrowbackblue);
 
         setSupportActionBar(binding.toolbar);
         Objects.requireNonNull(getSupportActionBar()).setHomeButtonEnabled(true);
