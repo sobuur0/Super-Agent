@@ -7,13 +7,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Edit_txt_styles" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
-<!--        <item name="boxStrokeColor">@android:color/black</item>-->
-<!--        <item name="boxCornerRadiusTopEnd">20dp</item>-->
-<!--        <item name="boxCornerRadiusTopStart">20dp</item>-->
-<!--        <item name="boxCornerRadiusBottomStart">20dp</item>-->
-<!--        <item name="boxCornerRadiusBottomEnd">20dp</item>-->
-    </style>
     
 
 </resources>

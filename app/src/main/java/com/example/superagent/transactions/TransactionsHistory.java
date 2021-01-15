@@ -32,5 +32,7 @@ public class TransactionsHistory extends AppCompatActivity {
         getSupportActionBar().setTitle("");
         binding.appBarLayout.bringToFront();
 
+
+
     }
 }
