@@ -598,7 +598,7 @@
                 android:id="@+id/fabDownload"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/fab1"
+                android:src="@drawable/download"
                 app:fabSize="normal"
                 android:backgroundTint="@color/colorPrimary"
                 app:layout_constraintTop_toTopOf="parent"
