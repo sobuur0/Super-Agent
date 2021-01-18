@@ -18,6 +18,7 @@ import java.util.Objects;
 
 public class WithdrawalSuccessful extends AppCompatActivity {
     private ActivityWithdrawalSuccessfulBinding binding;
+    private int REQUEST_CODE = 0;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
@@ -39,7 +40,7 @@ public class WithdrawalSuccessful extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST_CODE);
             }
         });
     }
