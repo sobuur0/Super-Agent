@@ -10,6 +10,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
+
 import com.example.superagent.R;
 import com.example.superagent.databinding.ActivityWithdrawalTransactionBinding;
 
@@ -18,6 +19,7 @@ import java.util.Objects;
 public class WithdrawalTransaction extends AppCompatActivity {
 
     private ActivityWithdrawalTransactionBinding binding;
+
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
@@ -51,5 +53,6 @@ public class WithdrawalTransaction extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
     }
 }
