@@ -9,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 import com.example.superagent.R;
 import com.example.superagent.databinding.ActivityWithdrawBinding;
@@ -41,5 +42,7 @@ public class Withdraw extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        EditText mPhoneNumber = binding.edtTextPhoneNo.getEditText();
     }
 }
