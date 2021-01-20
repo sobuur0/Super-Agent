@@ -12,7 +12,7 @@ import android.view.View;
 
 import com.example.superagent.R;
 import com.example.superagent.databinding.ActivityDepositSuccessBinding;
-import com.example.superagent.home.HomeScreen;
+import com.example.superagent.home.HomeScreenActivity;
 
 import java.util.Objects;
 
@@ -38,7 +38,7 @@ public class DepositSuccess extends AppCompatActivity {
         binding.btnBackHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
+                Intent intent = new Intent(getApplicationContext(), HomeScreenActivity.class);
                 startActivity(intent);
             }
         });

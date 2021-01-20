@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.superagent.databinding.ActivitySetPinBinding;
-import com.example.superagent.home.HomeScreen;
+import com.example.superagent.home.HomeScreenActivity;
 
 public class SetPin extends AppCompatActivity {
     private ActivitySetPinBinding binding;
@@ -21,7 +21,7 @@ public class SetPin extends AppCompatActivity {
         binding.btnSetPin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SetPin.this, HomeScreen.class);
+                Intent intent = new Intent(SetPin.this, HomeScreenActivity.class);
                 startActivity(intent);
             }
         });

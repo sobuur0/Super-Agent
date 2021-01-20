@@ -7,7 +7,7 @@ import android.os.Bundle;
 import com.example.superagent.R;
 import com.example.superagent.databinding.ActivityHomeScreenBinding;
 
-public class HomeScreen extends AppCompatActivity {
+public class HomeScreenActivity extends AppCompatActivity {
     private ActivityHomeScreenBinding binding;
 
     @Override
