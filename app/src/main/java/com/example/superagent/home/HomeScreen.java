@@ -1,11 +1,14 @@
 package com.example.superagent.home;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.superagent.R;
 import com.example.superagent.databinding.ActivityHomeScreenBinding;
 import com.example.superagent.deposits.Deposit;
 import com.example.superagent.transactions.TransactionsHistory;
@@ -20,36 +23,48 @@ public class HomeScreen extends AppCompatActivity {
         binding = ActivityHomeScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.cardDeposits.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeScreen.this, Deposit.class);
-                startActivity(intent);
-            }
-        });
+        FragmentManager fm = getSupportFragmentManager();
+        Fragment fragment = fm.findFragmentById(R.id.fragment_container);
+        if (fragment == null) {
+            fragment = new HomeFragment();
+            fm.beginTransaction()
+                    .add(R.id.fragment_container, fragment)
+                    .commit();
+        }
 
-        binding.cardWithdrawal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeScreen.this, Withdraw.class);
-                startActivity(intent);
-            }
-        });
 
-        binding.transchistory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HomeScreen.this, TransactionsHistory.class);
-                startActivity(intent);
-            }
-        });
 
-        binding.cardSupport.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-            }
-        });
+//        binding.cardDeposits.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(HomeScreen.this, Deposit.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        binding.cardWithdrawal.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(HomeScreen.this, Withdraw.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        binding.transchistory.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(HomeScreen.this, TransactionsHistory.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        binding.cardSupport.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//            }
+//        });
     }
 
 //    private void saveCardDetails() {
