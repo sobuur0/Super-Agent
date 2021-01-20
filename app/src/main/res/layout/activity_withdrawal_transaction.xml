@@ -262,7 +262,7 @@
                 android:id="@+id/txtView_phone_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/_233_989_433_8475"
+                tools:text="@string/_233_989_433_8475"
                 android:textColor="#4F4F4F"
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@+id/txt_phone_no"
