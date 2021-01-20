@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.example.superagent.R;
@@ -17,10 +18,10 @@ import com.example.superagent.transactions.TransactionsHistory;
 import com.example.superagent.withdrawal.Withdraw;
 
 public class HomeFragment extends Fragment {
-    private Button mCardDeposits;
-    private Button mCardWithdrawal;
-    private Button mTransHistory;
-    private Button mCardSupport;
+    private CardView mCardDeposits;
+    private CardView mCardWithdrawal;
+    private CardView mTransHistory;
+    private CardView mCardSupport;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
