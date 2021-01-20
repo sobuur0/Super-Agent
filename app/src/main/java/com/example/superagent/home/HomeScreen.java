@@ -32,39 +32,6 @@ public class HomeScreen extends AppCompatActivity {
                     .commit();
         }
 
-
-
-
-//        binding.cardDeposits.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(HomeScreen.this, Deposit.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        binding.cardWithdrawal.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(HomeScreen.this, Withdraw.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        binding.transchistory.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(HomeScreen.this, TransactionsHistory.class);
-//                startActivity(intent);
-//            }
-//        });
-//
-//        binding.cardSupport.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
     }
 
 //    private void saveCardDetails() {
