@@ -36,7 +36,7 @@ public class HomeFragment extends Fragment {
         mCardDeposits.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeScreen.this, Deposit.class);
+                Intent intent = new Intent(getActivity(), Deposit.class);
                 startActivity(intent);
             }
         });
@@ -45,7 +45,7 @@ public class HomeFragment extends Fragment {
         mCardWithdrawal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeScreen.this, Withdraw.class);
+                Intent intent = new Intent(getActivity(), Withdraw.class);
                 startActivity(intent);
             }
         });
@@ -54,7 +54,7 @@ public class HomeFragment extends Fragment {
         mTransHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(HomeScreen.this, TransactionsHistory.class);
+                Intent intent = new Intent(getActivity(), TransactionsHistory.class);
                 startActivity(intent);
             }
         });
