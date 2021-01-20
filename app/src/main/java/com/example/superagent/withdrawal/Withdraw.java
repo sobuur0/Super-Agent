@@ -19,9 +19,6 @@ import java.util.Objects;
 @RequiresApi(api = Build.VERSION_CODES.KITKAT)
 public class Withdraw extends AppCompatActivity {
     private ActivityWithdrawBinding binding;
-    private WithdrawModel mWithdrawModel;
-//    public String mPhoneNumber = binding.edtTextPhoneNo.getEditText().toString();
-    public String phoneNumber = binding.edtTextPhoneNo.getEditText().toString();
 
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
@@ -30,8 +27,6 @@ public class Withdraw extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityWithdrawBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        mWithdrawModel = new WithdrawModel();
 
         Drawable backArrow = ContextCompat.getDrawable(this, R.drawable.arrowback);
 
@@ -51,6 +46,5 @@ public class Withdraw extends AppCompatActivity {
         });
 
 
-        mWithdrawModel.setPhoneNumber(phoneNumber);
     }
 }

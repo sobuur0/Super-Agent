@@ -18,10 +18,7 @@ import java.util.Objects;
 
 @RequiresApi(api = Build.VERSION_CODES.KITKAT)
 public class WithdrawalTransaction extends AppCompatActivity {
-
-    Withdraw mWithdraw = new Withdraw();
     private ActivityWithdrawalTransactionBinding binding;
-    private WithdrawModel mWithdrawModel = new WithdrawModel(mWithdraw.phoneNumber);
 
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
@@ -56,9 +53,6 @@ public class WithdrawalTransaction extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
-        binding.txtViewPhoneNo.setText(mWithdrawModel.getPhoneNumber());
 
     }
 }
