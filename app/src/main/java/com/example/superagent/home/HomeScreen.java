@@ -3,16 +3,9 @@ package com.example.superagent.home;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-
 import com.example.superagent.R;
 import com.example.superagent.databinding.ActivityHomeScreenBinding;
-import com.example.superagent.deposits.Deposit;
-import com.example.superagent.transactions.TransactionsHistory;
-import com.example.superagent.withdrawal.Withdraw;
 
 public class HomeScreen extends AppCompatActivity {
     private ActivityHomeScreenBinding binding;
