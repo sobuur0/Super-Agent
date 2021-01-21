@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginSignUp.LoginActivity"
-    android:id="@+id/fragment_container">
+    tools:context=".loginSignUp.LoginSignUpActivity"
+    android:id="@+id/loginSignUp_fragment_container">
 
 </FrameLayout>

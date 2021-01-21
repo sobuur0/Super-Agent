@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.superagent.databinding.ActivityMainBinding;
-import com.example.superagent.loginSignUp.LoginActivity;
+import com.example.superagent.loginSignUp.LoginSignUpActivity;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         binding.hello.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                Intent intent = new Intent(MainActivity.this, LoginSignUpActivity.class);
                 startActivity(intent);
             }
         });

@@ -33,7 +33,7 @@
             android:parentActivityName=".home.HomeScreenActivity" />
         <activity android:name=".home.HomeScreenActivity" />
         <activity android:name=".loginSignUp.SetPin" />
-        <activity android:name=".loginSignUp.LoginActivity" />
+        <activity android:name=".loginSignUp.LoginSignUpActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

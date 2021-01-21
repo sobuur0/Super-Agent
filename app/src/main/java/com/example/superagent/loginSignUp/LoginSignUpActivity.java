@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginSignUpActivity extends AppCompatActivity {
 
     private ActivityLoginActivtyBinding binding;
 
@@ -29,11 +29,11 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         FragmentManager fm = getSupportFragmentManager();
-        Fragment fragment = fm.findFragmentById(R.id.fragment_container);
+        Fragment fragment = fm.findFragmentById(R.id.loginSignUp_fragment_container);
         if (fragment == null) {
             fragment =new  LoginFragment();
             fm.beginTransaction()
-                    .add(R.id.fragment_container, fragment)
+                    .add(R.id.loginSignUp_fragment_container, fragment)
                     .commit();
         }
     }
