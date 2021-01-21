@@ -21,17 +21,17 @@
             android:parentActivityName=".deposits.Deposit" />
         <activity
             android:name=".transactions.TransactionsHistory"
-            android:parentActivityName=".home.HomeScreen" />
+            android:parentActivityName=".home.HomeScreenActivity" />
         <activity
             android:name=".withdrawal.WithdrawalTransaction"
             android:parentActivityName=".withdrawal.Withdraw" />
         <activity
             android:name=".withdrawal.Withdraw"
-            android:parentActivityName=".home.HomeScreen" />
+            android:parentActivityName=".home.HomeScreenActivity" />
         <activity
             android:name=".deposits.Deposit"
-            android:parentActivityName=".home.HomeScreen" />
-        <activity android:name=".home.HomeScreen" />
+            android:parentActivityName=".home.HomeScreenActivity" />
+        <activity android:name=".home.HomeScreenActivity" />
         <activity android:name=".loginSignUp.SetPin" />
         <activity android:name=".loginSignUp.LoginActivity" />
         <activity android:name=".MainActivity">

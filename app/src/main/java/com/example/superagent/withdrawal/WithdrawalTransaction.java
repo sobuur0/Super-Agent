@@ -16,8 +16,8 @@ import com.example.superagent.databinding.ActivityWithdrawalTransactionBinding;
 
 import java.util.Objects;
 
+@RequiresApi(api = Build.VERSION_CODES.KITKAT)
 public class WithdrawalTransaction extends AppCompatActivity {
-
     private ActivityWithdrawalTransactionBinding binding;
 
 

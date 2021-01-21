@@ -19,7 +19,6 @@ import java.util.Objects;
 @RequiresApi(api = Build.VERSION_CODES.KITKAT)
 public class Withdraw extends AppCompatActivity {
     private ActivityWithdrawBinding binding;
-//    public String mPhoneNumber = binding.edtTextPhoneNo.getEditText().toString();
 
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
