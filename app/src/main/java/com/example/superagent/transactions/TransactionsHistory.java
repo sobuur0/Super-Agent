@@ -3,6 +3,8 @@ package com.example.superagent.transactions;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import android.graphics.drawable.Drawable;
 import android.os.Build;
@@ -10,6 +12,7 @@ import android.os.Bundle;
 
 import com.example.superagent.R;
 import com.example.superagent.databinding.ActivityTransactionsHistoryBinding;
+import com.example.superagent.databinding.FragmentTransactionsHistoryBinding;
 
 import java.util.Objects;
 
@@ -23,14 +26,14 @@ public class TransactionsHistory extends AppCompatActivity {
         binding = ActivityTransactionsHistoryBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Drawable backArrow = ContextCompat.getDrawable(this, R.drawable.arrowback);
-
-        setSupportActionBar(binding.toolbar);
-        Objects.requireNonNull(getSupportActionBar()).setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(backArrow);
-        getSupportActionBar().setTitle("");
-        binding.appBarLayout.bringToFront();
+        FragmentManager fm = getSupportFragmentManager();
+        Fragment fragment = fm.findFragmentById(R.id.fragment_transactions_history);
+        if (fragment == null) {
+            fragment = new TransactionFragment();
+            fm.beginTransaction()
+                    .add(R.id.fragment_transactions_history, fragment)
+                    .commit();
+        }
 
 
 
