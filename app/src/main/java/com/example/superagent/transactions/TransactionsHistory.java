@@ -23,14 +23,7 @@ public class TransactionsHistory extends AppCompatActivity {
         binding = ActivityTransactionsHistoryBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Drawable backArrow = ContextCompat.getDrawable(this, R.drawable.arrowback);
 
-        setSupportActionBar(binding.toolbar);
-        Objects.requireNonNull(getSupportActionBar()).setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeAsUpIndicator(backArrow);
-        getSupportActionBar().setTitle("");
-        binding.appBarLayout.bringToFront();
 
 
 
