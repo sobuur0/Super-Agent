@@ -12,6 +12,7 @@ import android.os.Bundle;
 
 import com.example.superagent.R;
 import com.example.superagent.databinding.ActivityTransactionsHistoryBinding;
+import com.example.superagent.databinding.FragmentTransactionsHistoryBinding;
 
 import java.util.Objects;
 

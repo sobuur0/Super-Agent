@@ -16,11 +16,14 @@ import androidx.fragment.app.Fragment;
 
 import com.example.superagent.R;
 import com.example.superagent.databinding.FragmentTransactionsHistoryBinding;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.MaterialToolbar;
 
 import java.util.Objects;
 
 public class TransactionFragment extends Fragment {
-    private FragmentTransactionsHistoryBinding binding;
+    private MaterialToolbar mToolbar;
+    private AppBarLayout mAppBarLayout;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,12 +38,15 @@ public class TransactionFragment extends Fragment {
 
         Drawable backArrow = ContextCompat.getDrawable(getContext(), R.drawable.arrowback);
 
-        ((TransactionsHistory)getActivity()).setSupportActionBar(binding.toolbar);
+        mToolbar = v.findViewById(R.id.toolbar);
+        mAppBarLayout = v.findViewById(R.id.appBarLayout);
+
+        ((TransactionsHistory)getActivity()).setSupportActionBar(mToolbar);
         Objects.requireNonNull(((TransactionsHistory)getActivity()).getSupportActionBar()).setHomeButtonEnabled(true);
         ((TransactionsHistory)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         ((TransactionsHistory)getActivity()).getSupportActionBar().setHomeAsUpIndicator(backArrow);
         ((TransactionsHistory)getActivity()).getSupportActionBar().setTitle("");
-        binding.appBarLayout.bringToFront();
+        mAppBarLayout.bringToFront();
 
         return v;
     }
