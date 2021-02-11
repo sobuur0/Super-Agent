@@ -29,12 +29,12 @@ public class LoginSignUpActivity extends AppCompatActivity {
         }
 
 
-        if (fragment != null) {
-            fragment = new SignUpFragment();
-            fm.beginTransaction()
-                    .add(R.id.loginSignUp_fragment_container, fragment)
-                    .commit();
-        }
+//        if (fragment != null) {
+//            fragment = new SignUpFragment();
+//            fm.beginTransaction()
+//                    .add(R.id.loginSignUp_fragment_container, fragment)
+//                    .commit();
+//        }
     }
 
 
