@@ -35,7 +35,5 @@ public class TransactionsHistory extends AppCompatActivity {
                     .commit();
         }
 
-
-
     }
 }
