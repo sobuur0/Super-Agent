@@ -16,6 +16,11 @@ import com.example.superagent.R;
 public class LoginFragment extends Fragment {
     private Button btnLogin;
 
+    public static LoginFragment getInstance() {
+        LoginFragment loginFragment = new LoginFragment();
+        return loginFragment;
+    }
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -19,6 +19,11 @@ public class SignUpFragment extends Fragment {
     private FragmentSignupBinding binding;
     private Button btnSignUp;
 
+    public static SignUpFragment getInstance() {
+        SignUpFragment signUpFragment = new SignUpFragment();
+        return signUpFragment;
+    }
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
