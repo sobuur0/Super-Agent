@@ -43,6 +43,14 @@ public class SignUpFragment extends Fragment {
             }
         });
 
+        binding.txtForgotPsswd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), LoginFragment.class);
+                startActivity(intent);
+            }
+        });
+
         return v;
     }
 }
