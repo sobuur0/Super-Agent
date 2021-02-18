@@ -216,7 +216,7 @@
                 android:id="@+id/txt_forgot_psswd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Forgot Password ?"
+                android:text="Already a User ?"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textAllCaps="false"
