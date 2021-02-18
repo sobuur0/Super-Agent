@@ -53,33 +53,14 @@
                 android:id="@+id/atlas_txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="150dp"
-                android:layout_marginLeft="150dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="150dp"
-                android:layout_marginRight="150dp"
                 android:gravity="center_horizontal"
-                android:text="@string/atlas_txt"
+                android:text="Super Agent"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/atlas_logo" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/super_agent_txt"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginLeft="142dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginRight="142dp"
-                android:gravity="center_horizontal"
-                android:text="@string/super_agent_txt"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/atlas_txt" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edtText_email"
@@ -93,7 +74,7 @@
                 app:startIconDrawable="@drawable/email_icon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/super_agent_txt">
+                app:layout_constraintTop_toBottomOf="@id/atlas_txt">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
