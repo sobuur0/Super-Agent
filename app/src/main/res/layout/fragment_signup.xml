@@ -45,23 +45,10 @@
                 android:id="@+id/app_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Atlas"
+                android:text="Super Agent"
                 android:textSize="18sp"
                 android:textAlignment="center"
                 app:layout_constraintTop_toBottomOf="@id/logo"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="15dp"/>
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/page_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Super Agent"
-                android:textSize="24sp"
-                android:textAlignment="center"
-                app:layout_constraintTop_toBottomOf="@id/app_name"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:gravity="center_horizontal"
@@ -80,7 +67,7 @@
                 app:startIconDrawable="@drawable/email_icon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/page_name">
+                app:layout_constraintTop_toBottomOf="@id/app_name">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
