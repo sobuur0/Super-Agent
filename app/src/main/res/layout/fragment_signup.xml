@@ -45,23 +45,11 @@
                 android:id="@+id/app_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Atlas"
-                android:textSize="18sp"
+                android:text="Super Agent"
+                android:textSize="20sp"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 app:layout_constraintTop_toBottomOf="@id/logo"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:gravity="center_horizontal"
-                android:layout_marginTop="15dp"/>
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/page_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sign Up"
-                android:textSize="24sp"
-                android:textAlignment="center"
-                app:layout_constraintTop_toBottomOf="@id/app_name"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:gravity="center_horizontal"
@@ -74,13 +62,13 @@
                 android:layout_width="0dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginRight="30dp"
                 app:boxBackgroundColor="#4F4F4F"
                 app:startIconDrawable="@drawable/email_icon"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/page_name">
+                app:layout_constraintTop_toBottomOf="@id/app_name">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
@@ -211,6 +199,21 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_forgot_psswd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already a User ?"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/edtText_passwd_signUp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="20dp" />
+
             
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/signUp"
@@ -218,7 +221,7 @@
                 android:layout_height="60dp"
                 android:text="SignUp"
                 android:textAllCaps="false"
-                app:layout_constraintTop_toBottomOf="@id/edtText_passwd_signUp"
+                app:layout_constraintTop_toBottomOf="@id/txt_forgot_psswd"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginTop="30dp"
@@ -226,6 +229,15 @@
                 android:layout_marginEnd="30dp"/>
 
 
+            <ProgressBar
+                android:id="@+id/progress_circular"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

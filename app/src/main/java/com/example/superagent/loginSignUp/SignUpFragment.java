@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +19,7 @@ import com.example.superagent.home.HomeScreenActivity;
 public class SignUpFragment extends Fragment {
     private FragmentSignupBinding binding;
     private Button btnSignUp;
+    private TextView txtForgotPsswd;
 
     public static SignUpFragment getInstance() {
         SignUpFragment signUpFragment = new SignUpFragment();
@@ -39,6 +41,15 @@ public class SignUpFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), HomeScreenActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        txtForgotPsswd = v.findViewById(R.id.txt_forgot_psswd);
+        txtForgotPsswd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), LoginSignUpActivity.class);
                 startActivity(intent);
             }
         });
