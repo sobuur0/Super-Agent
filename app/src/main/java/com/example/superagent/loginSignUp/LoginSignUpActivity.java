@@ -34,22 +34,7 @@ public class LoginSignUpActivity extends AppCompatActivity {
 
         tablayout.setupWithViewPager(viewpager);
 
-//        FragmentManager fm = getSupportFragmentManager();
-//        Fragment fragment = fm.findFragmentById(R.id.loginSignUp_fragment_container);
-//        if (fragment == null) {
-//            fragment =new  LoginFragment();
-//            fm.beginTransaction()
-//                    .add(R.id.loginSignUp_fragment_container, fragment)
-//                    .commit();
-//        }
 
-
-//        if (fragment != null) {
-//            fragment = new SignUpFragment();
-//            fm.beginTransaction()
-//                    .add(R.id.loginSignUp_fragment_container, fragment)
-//                    .commit();
-//        }
     }
 
 
