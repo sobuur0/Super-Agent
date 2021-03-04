@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -26,8 +25,7 @@ public class SignUpFragment extends Fragment {
     private FirebaseAuth mAuth;
     private FragmentSignupBinding binding;
     private Button btnSignUp;
-    private TextView txtForgotPsswd;
-    private TextView email;
+    private TextView txtForgotPsswd, edtTextEmail, edtTextPassword;
 
     public static SignUpFragment getInstance() {
         SignUpFragment signUpFragment = new SignUpFragment();
@@ -45,6 +43,9 @@ public class SignUpFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_signup, container, false);
+
+        edtTextEmail = v.findViewById(R.id.edtText_email_signUp);
+        edtTextPassword = v.findViewById(R.id.edtText_passwd_signUp);
 
         btnSignUp = v.findViewById(R.id.signUp);
         btnSignUp.setOnClickListener(new View.OnClickListener() {
@@ -71,14 +72,15 @@ public class SignUpFragment extends Fragment {
     }
 
     private void registerUser() {
-        email =
+        String email = edtTextEmail.getText().toString().trim();
+        String password = edtTextPassword.getText().toString().trim();
+
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            FirebaseUser user = mAuth.getCurrentUser();
-                            updateUI(user);
+
                         }
                     }
                 })
