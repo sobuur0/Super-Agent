@@ -7,6 +7,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:77692427153:android:6f3eee3e8e2956f6609830",
+        "android_client_info": {
+          "package_name": "com.example.criminalintent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "77692427153-5tr55tc3lo2qdfp9uk4pkdjsmfjv8o54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIv6UAgDLmxLhqW0HBEyMBPpcmx-WeSq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "77692427153-5tr55tc3lo2qdfp9uk4pkdjsmfjv8o54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:77692427153:android:99d7162418075956609830",
         "android_client_info": {
           "package_name": "com.example.superagent"
