@@ -106,11 +106,11 @@ public class SignUpFragment extends Fragment {
             edtTextlastName.requestFocus();
             return;
         }
-        if (Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+        if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             edtTextEmail.setError("Kindly enter your password");
             edtTextEmail.requestFocus();
         }
-        if ((password.length() < 6)) {
+        if (!(password.length() < 6)) {
             edtTextPassword.setError("Kindly enter your password");
             edtTextPassword.requestFocus();
         }
